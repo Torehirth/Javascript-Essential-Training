@@ -4,7 +4,7 @@
 
 // Single line comment
 
-/* Multi-line comment
+/* Multi-line comment 
 See! this line is also commented out! */
 
 const updateBackpack = (update) => {
@@ -34,6 +34,12 @@ const backpack = {
   },
 };
 
+/**
+ * 
+ * @param {*} backpack 
+ * @returns 
+ */
+
 const markup = (backpack) => {
   return `
   <div>
@@ -52,3 +58,4 @@ const markup = (backpack) => {
 const main = document.createElement("main");
 main.innerHTML = markup(backpack);
 document.body.appendChild(main);
+

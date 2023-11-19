@@ -24,8 +24,7 @@ const frogpack = {
   },
   lidOpen: false,
   image: "../../assets/images/frog.svg",
-  description:
-    "A green kids backpack designed to make the lid look like the face of a frog sticking out its tongue.",
+  description: "A green kids backpack designed to make the lid look like the face of a frog sticking out its tongue.",
   toggleLid: function (lidStatus) {
     this.lidOpen = lidStatus;
   },
@@ -39,24 +38,12 @@ const frogpack = {
 const content = `
     <h1 class="backpack__name">${frogpack.name}</h1>
     <ul class="backpack__features">
-      <li class="packprop backpack__volume">Volume:<span> ${
-        frogpack.volume
-      }l</span></li>
-      <li class="packprop backpack__color">Color:<span> ${
-        frogpack.color
-      }</span></li>
-      <li class="packprop backpack__pockets">Number of pockets:<span> ${
-        frogpack.pocketNum
-      }</span></li>
-      <li class="packprop backpack__strap">Left strap length:<span> ${
-        frogpack.strapLength.left
-      } inches</span></li>
-      <li class="packprop backpack__strap">Right strap length:<span> ${
-        frogpack.strapLength.right
-      } inches</span></li>
-      <li class="feature backpack__lid">Lid status:<span> ${
-        frogpack.lidOpen ? "open" : "closed"
-      }</span></li>
+      <li class="packprop backpack__volume">Volume:<span> ${frogpack.volume}l</span></li>
+      <li class="packprop backpack__color">Color:<span> ${frogpack.color}</span></li>
+      <li class="packprop backpack__pockets">Number of pockets:<span> ${frogpack.pocketNum}</span></li>
+      <li class="packprop backpack__strap">Left strap length:<span> ${frogpack.strapLength.left} inches</span></li>
+      <li class="packprop backpack__strap">Right strap length:<span> ${frogpack.strapLength.right} inches</span></li>
+      <li class="feature backpack__lid">Lid status:<span> ${frogpack.lidOpen ? "open" : "closed"}</span></li>
     </ul>  
 `;
 
